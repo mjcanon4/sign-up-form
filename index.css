@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position:relative;
+  }
+
+body {
+    background: hsl(0, 100%, 74%);
+    background-image: url(/Users/michaelcanon/Downloads/intro-component-with-signup-form-master/images/bg-intro-desktop.png);
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input, button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  border-radius: 3px;
+}
+
+.leftright {
+    margin: 5rem 1.5rem;
+    text-align: center;
+    display: flex;
+    align-items: space-around;
+    align-items: center;
+    grid-template-columns: 1fr;
+    position: relative;
+}
+
+.left {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+
+.left-header {
+    font-size: 500;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.left-body {
+    text-align: left;
+    font-size: .75em;
+    justify-content: center;
+    margin-bottom: 3rem;
+    width: 400px;
+}
+
+#right-head {
+    background-color: hsl(248, 32%, 49%);
+    padding: 1.3rem 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+#right-head p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.signup-form {
+    border-radius: 0.5rem;
+    background: #fff;
+    padding: 1.5rem;
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.15);
+  }
+
+.signup-form-control {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+input {
+    display: flex;
+    width: 100%;
+    border: 1px solid hsl(249, 10%, 26%);
+    outline: none;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+}
+
+
+.signup-form-input:focus {
+    border: 1px solid hsl(249, 10%, 26%);
+    border-radius: 3px;
+  }
+  
+  .signup-form-input::placeholder {
+    color: 	rgb(62, 60, 73, 0.4);
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+  .signup-form-control small {
+    color: hsl(0, 100%, 74%);;
+    position: absolute;
+    right: 0;
+    font-style: italic;
+    font-size: 0.7rem;
+    display: none;
+  }
+  
+  .signup-form-control img {
+    position: absolute;
+    right: 0.7rem;
+    top: 25%;
+    display: none;
+  }
+  
+  .signup-form-control.error {
+    margin-bottom: 2rem;
+  }
+  
+  .signup-form-control.error small,
+  .signup-form-control.error img {
+    display: block;
+  }
+  
+  .signup-form-control.error .signup-form-input {
+    border: 2px solid hsl(0, 100%, 74%);;
+  }
+
+.signup-button {
+    background: hsl(154, 59%, 51%);
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 1.1rem;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    box-shadow: v0px 5px 0px 0px rgba(0, 0, 0, 0.15);
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .signup-form-terms {
+    color: hsl(246, 25%, 77%);
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    padding: 0 1rem;
+    text-align: center;
+}
+  
+.signup-form-terms a {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
